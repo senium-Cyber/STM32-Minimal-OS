@@ -1,0 +1,10 @@
+# 编译输出
+build/
+*.elf
+*.bin
+*.hex
+
+# IDE 配置
+.vscode/
+.cproject
+.project
