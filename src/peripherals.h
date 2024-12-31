@@ -27,4 +27,8 @@ void Peripherals_InitUART(UART_HandleTypeDef *huart);
  */
 void Peripherals_InitTimer(TIM_HandleTypeDef *htim);
 
+// 电源管理
+void Enter_LowPowerMode(void);
+
+
 #endif // PERIPHERALS_H
