@@ -9,6 +9,7 @@
 - 低功耗管理：支持进入 SLEEP 模式。
 
 ## 项目目录
+```bash
 STM32-Minimal-OS/
 ├── docs/                   # 文档文件夹：包含项目说明文档、数据表、原理图等
 │   ├── README.md           # 项目文档的详细说明
@@ -33,6 +34,7 @@ STM32-Minimal-OS/
 ├── LICENSE                 # 项目许可协议
 ├── README.md               # 项目说明文件
 └── Makefile / CMakeLists.txt # 构建系统配置文件
+```
 ## 快速开始
 1. 克隆本仓库：
    ```bash
