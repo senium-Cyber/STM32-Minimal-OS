@@ -40,16 +40,12 @@ STM32-Minimal-OS/
 1. 克隆本仓库：
    ```bash
    git clone https://github.com/yourusername/STM32-Minimal-OS.git
-   ```
-   
+   ```   
 2.构建项目：
    ```bash
    make
    ```
-
 3.烧录程序：
    ```bash
    ./scripts/flash.sh
    ```
-
-  
