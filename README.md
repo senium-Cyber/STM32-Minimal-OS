@@ -32,21 +32,24 @@ STM32-Minimal-OS/
 │   ├── flash.sh            # 烧录脚本
 │   └── debug.sh            # 调试脚本
 ├── .gitignore              # 忽略文件规则
-├── LICENSE                 # 项目许可协议
 ├── README.md               # 项目说明文件
 └── Makefile / CMakeLists.txt # 构建系统配置文件
 ```
+
 ## 快速开始
 1. 克隆本仓库：
    ```bash
    git clone https://github.com/yourusername/STM32-Minimal-OS.git
    ```
+   
 2.构建项目：
    ```bash
    make
    ```
+
 3.烧录程序：
    ```bash
    ./scripts/flash.sh
    ```
+
   
