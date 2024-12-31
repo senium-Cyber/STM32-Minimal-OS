@@ -14,7 +14,7 @@ STM32-Minimal-OS/
 ├── docs/                   # 文档文件夹：包含项目说明文档、数据表、原理图等
 │   ├── README.md           # 项目文档的详细说明
 │   ├── Sheet.schdoc        # 原理图文件
-|   ├── PCB.pcbdoc          # PCB文件
+│   ├── PCB.pcbdoc          # PCB文件
 │   └── datasheets/         # 芯片及模块相关数据手册
 ├── src/                    # 源代码文件夹：存放所有代码
 │   ├── main.c              # 主函数
