@@ -52,6 +52,8 @@ void TaskScheduler_Run(void) {
             (currentTime - taskList[i].lastRunTime) >= taskList[i].period) {
             taskList[i].taskFunc();
             taskList[i].lastRunTime = currentTime;
+            break; // 运行最高优先级任务后退出循环
         }
     }
 }
+
