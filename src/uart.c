@@ -37,3 +37,15 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
         // 在此处理接收逻辑
     }
 }
+
+// UART 日志记录
+void UART_Log(const char *format, ...) {
+    char buffer[256]; // 日志缓冲区
+    va_list args;     // 定义可变参数列表
+
+    va_start(args, format);                    // 初始化可变参数
+    vsnprintf(buffer, sizeof(buffer), format, args); // 格式化输出到缓冲区
+    va_end(args);                              // 结束可变参数处理
+
+    UART_Send(buffer); // 通过 UART 发送缓冲区内容
+}
