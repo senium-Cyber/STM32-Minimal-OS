@@ -22,6 +22,10 @@ void TaskScheduler_Init(void);
  * @param task_function 任务函数指针
  * @param period_ms 任务运行周期
  */
+void TaskScheduler_SortTasks(void) 
+/**
+ * @brief 优先级排序
+ */
 void TaskScheduler_AddTask(void (*task_function)(void), uint32_t period_ms);
 
 /**
