@@ -29,3 +29,8 @@ void Peripherals_Init(void) {
     hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
     HAL_I2C_Init(&hi2c1);
 }
+
+void Enter_LowPowerMode(void) {
+    __HAL_RCC_PWR_CLK_ENABLE();
+    HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
+}
