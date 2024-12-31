@@ -13,10 +13,14 @@ int main(void) {
     SystemClock_Config(); // 配置系统时钟
     GPIO_Init(); // 初始化 GPIO
     Peripherals_Init(); // 初始化外设
-
+    Interrupt_Init();
+    UART_Init();
+    I2C_Init();
+    SPI_Init();
     // 初始化任务调度器
     TaskScheduler_Init();
-
+    // 添加带优先级的任务
+    TaskScheduler_AddTaskWithPriority(Task_BlinkLED, 1000, 1);
     while (1) {
         // 执行任务调度
         TaskScheduler_Run();
